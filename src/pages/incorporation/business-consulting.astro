@@ -1,0 +1,25 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Business consulting',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Business consulting"
+    title="Elevate Your Business with Expert Consulting"
+    subtitle="Navigating the complex business landscape in Singapore requires strategic guidance. Whether you're a budding entrepreneur or a seasoned executive, our experienced consultants are here to empower your company's success."
+    actions={[
+      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Learn more', href: '#' },
+    ]}
+    image={{ src: '~/assets/images/business_consulting.jpg', alt: 'Solidago Hero Image' }}
+  />
+</Layout>

@@ -3,119 +3,102 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Incorporation',
+      subtext: 'Start your business',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Business consulting',
+          href: getPermalink('/incorporation/business-consulting'),
         },
         {
-          text: 'Startup',
+          text: 'Company Incorporation',
+          href: getPermalink('/homes/mobile-app'),
+        },
+      ],
+    },
+    {
+      text: 'Accounting',
+      subtext: 'Grow your business',
+      links: [
+        {
+          text: 'Accounting & bookkeeping',
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
+          text: 'Financial reporting',
           href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'GST Services',
+          href: getPermalink('/homes/mobile-app'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Tax Advisory',
+      subtext: 'Pay the right tax',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
+          text: 'Corporate tax advisory',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Personal tax advisory',
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
+          text: 'Tax filing and compliance',
           href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: 'Payroll',
+      subtext: 'Reliable payroll services',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'Payroll Outsource',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: 'CPF Application and Submission',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
+          text: 'IR8A/AIS Annual Filing',
           href: getPermalink('/landing/product'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
+          text: 'IR21 Tax Clearance',
           href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
         },
       ],
     },
     {
-      text: 'Blog',
+      text: 'Company secretary',
+      subtext: 'Effortless secretary services',
       links: [
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
+          text: 'Registered Address',
           href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
-          text: 'Article (with MDX)',
+          text: 'Corporate Secretary',
           href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Category Page',
+          text: 'Add-on Services',
           href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
         },
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'About Us',
+      href: 'about',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  // keep this as a reference in the future.
+  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {

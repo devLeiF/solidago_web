@@ -141,6 +141,15 @@ export interface Item {
   image?: Image;
 }
 
+export interface ListItem {
+  title?: string;
+  description: Array<string>?;
+  icon?: string;
+  classes?: Record<string, string>;
+  callToAction?: CallToAction;
+  image?: Image;
+}
+
 export interface Price {
   title?: string;
   subtitle?: string;
@@ -191,6 +200,13 @@ export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
 
 export interface ItemGrid {
   items?: Array<Item>;
+  columns?: number;
+  defaultIcon?: string;
+  classes?: Record<string, string>;
+}
+
+export interface ListItemGrid {
+  items?: Array<ListItem>;
   columns?: number;
   defaultIcon?: string;
   classes?: Record<string, string>;
@@ -254,6 +270,19 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
   isAfterContent?: boolean;
 }
 
+export interface FeaturesWithListItem extends Omit<Headline, 'classes'>, Widget {
+  image?: string | unknown;
+  video?: Video;
+  items?: Array<ListItem>;
+  columns?: number;
+  defaultIcon?: string;
+  callToAction1?: CallToAction;
+  callToAction2?: CallToAction;
+  isReversed?: boolean;
+  isBeforeContent?: boolean;
+  isAfterContent?: boolean;
+}
+
 export interface Faqs extends Omit<Headline, 'classes'>, Widget {
   iconUp?: string;
   iconDown?: string;
@@ -283,4 +312,4 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
   callToAction?: CallToAction;
 }
 
-export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+export interface Contact extends Omit<Headline, 'classes'>, Form, Widget { }

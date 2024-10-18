@@ -24,27 +24,27 @@ const metadata = {
   <Hero
     tagline="Startup Web Demo"
     actions={[
-      {
-        variant: 'primary',
-        target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
+      // Comment the line below to disable the button, for reference later.
+      // {
+      //   variant: 'primary',
+      //   target: '_blank',
+      //   text: 'Get templates',
+      //   href: 'https://github.com/onwidget/astrowind',
+      //   icon: 'tabler:download',
+      // },
+      // { text: 'Learn more', href: '#features' },
     ]}
   >
     <Fragment slot="title">
-      Improve <span class="hidden sm:inline">the online presence of</span> your <span
-        class="text-accent dark:text-white highlight">Startup</span
-      > with Astrowind templates
+      Simplify your company management with our <span class="text-accent dark:text-white highlight"> expert</span> support
     </Fragment>
 
     <Fragment slot="subtitle">
-      Step into the spotlight with <span class="font-semibold">Astrowind</span> templates, your pathway to fortifying your
-      startup's digital footprint, fostering credibility, and expanding your reach.
+      Enjoy stress-free bookkeeping, payroll, and corporate secretary services with <span class="font-semibold"
+        >Solidago</span
+      >. Register and manage for peace of mind.
     </Fragment>
-
+    <!-- 
     <Fragment slot="image">
       <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
       <style is:inline>
@@ -53,7 +53,7 @@ const metadata = {
           max-width: 100%;
         }
       </style>
-    </Fragment>
+    </Fragment> -->
   </Hero>
 
   <!-- Features2 Widget ************** -->
@@ -130,23 +130,28 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    title="Navigating Singapore's Business Landscape: Your Expert Partner"
+    subtitle="Seamless and Compliant Expansion in Singapore and Asia. Our expertise ensures your business navigates the complexities of regional regulations with ease."
     items={[
       {
-        title: 'Installation Instructions',
+        title: 'Business set up',
+        description: '-Business consulting \n- Company Incorporation',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Accounting and taxation',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
+          '- Bookkeeping - Compilation of financial statements - GST application and filing  - Corporate tax advisory and filing - Personal tax advisory and filing',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Company secretary',
+        description:
+          'Providing customer support for any technical issues related to the templates or their implementation.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Demo and Previews',
-        description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Technical Support',
+        title: 'Add on services',
         description:
           'Providing customer support for any technical issues related to the templates or their implementation.',
         icon: 'flat-color-icons:voice-presentation',
