@@ -1,20 +1,10 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: 'Incorporation',
-      subtext: 'Start your business',
-      links: [
-        {
-          text: 'Business consulting',
-          href: getPermalink('/incorporation/business-consulting'),
-        },
-        {
-          text: 'Company Incorporation',
-          href: getPermalink('/homes/mobile-app'),
-        },
-      ],
+      href: getPermalink('/incorporation'),
     },
     {
       text: 'Accounting',

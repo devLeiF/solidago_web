@@ -1,0 +1,94 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+
+const metadata = {
+  title: 'Incorporation',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Incorporation"
+    title="Start Your Business in Singapore"
+    subtitle="If you are a new entity embarking on a journey into the Singapore market or expanding your reach across the region, our Singapore-based corporate services offer end-to-end solutions to help you navigate new markets seamlessly. We're here to support your growth every step of the way."
+    image={{ src: '~/assets/images/business_consulting.jpg', alt: 'Incorporation hero image' }}
+  />
+  <Features2
+    title="Why Choose Solidago for Your Business Incorporation?"
+    subtitle="Streamline your company incorporation process and start trading quickly with the expert guidance and support from Solidago. Our team understands the legal requirements for setting up your new business and can help you navigate the complexities of registration."
+    items={[
+      {
+        title: 'Expert Support',
+        description:
+          "Connect with our experienced team for personalized insights and assistance throughout the registration process. We're here to answer your questions and clarify any uncertainties.",
+        icon: 'flat-color-icons:online-support',
+      },
+      {
+        title: 'Affordable, Transparent Pricing',
+        description: 'Get a quote and know your costs upfront.No hidden fees around the corner.',
+        icon: 'flat-color-icons:sales-performance',
+      },
+      {
+        title: 'Fast processing',
+        description: 'Our expedited processing has your business ready in a flash.',
+        icon: 'flat-color-icons:clock',
+      },
+    ]}
+  />
+
+  <Steps
+    title="Starting Your Business: A Step-by-Step Guide"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Select Your Business Structure and Services</span>',
+        description:
+          "Begin by choosing the most suitable business structure for your venture, such as a Private Limited Company, a Sole Proprietorship, or a Partnership. We can assist you in selecting the right structure and recommend additional services tailored to your needs, including bookkeeping, tax compliance, and company secretarial support. We'll guide you through a simple electronic questionnaire to gather vital information about your business, such as shareholder and director details, proposed activities, and required documents.",
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Reserve Your Company Name</span>',
+        description:
+          "To ensure your chosen company name is available, we will ask you to provide three options. We'll then check availability and proceed with reserving your preferred choice.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">We Prepare and File Your Incorporation Documents</span>',
+        description:
+          "We'll meticulously prepare all necessary incorporation documents, including your company's constitution. After you electronically sign these documents, we'll complete the registration process with the Accounting and Corporate Regulatory Authority (ACRA).",
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">ACRA Confirms Your New Business</span>',
+        description:
+          "Once ACRA approves your registration, we'll obtain your Certificate of Incorporation, a common seal, set up statutory registers, and prepare resolutions for your first Board of Directors' meeting.",
+        icon: 'tabler:check',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Open Your Corporate Bank Account</span>',
+        description:
+          'Your newly registered company will need a bank account. We can provide you with the resolution to open the account.',
+        icon: 'tabler:building-bank',
+      },
+      {
+        title: 'Step 6: <span class="font-medium">Secure an Employment Pass (If Applicable)</span>',
+        description:
+          'If you plan to operate your business from Singapore and are a foreign national, we can assist you with applying for an Employment Pass. This pass allows foreign professionals, managers, and executives to work in Singapore.',
+        icon: 'tabler:id',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:confetti',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/steps.jpg',
+      alt: 'Steps image',
+    }}
+  />
+</Layout>
