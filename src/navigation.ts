@@ -12,21 +12,7 @@ export const headerData = {
     },
     {
       text: 'Tax Advisory',
-      subtext: 'Pay the right tax',
-      links: [
-        {
-          text: 'Corporate tax advisory',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Personal tax advisory',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'Tax filing and compliance',
-          href: getPermalink('/about'),
-        },
-      ],
+      href: getPermalink('/tax-advisory'),
     },
     {
       text: 'Payroll',

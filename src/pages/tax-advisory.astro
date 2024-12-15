@@ -1,0 +1,147 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import ServiceItem from '~/components/widgets/ServiceItem.astro';
+
+const metadata = {
+  title: 'Tax Advisory',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Tax Advisory"
+    title="Tax Advisory, Planning, and Compliance in Singapore"
+    subtitle="Our experienced team provides comprehensive tax services to help you minimize your tax liability and ensure compliance with Singapore tax regulations. Whether you're seeking to optimize your tax planning strategy or need assistance with tax filings, we can provide the expertise and support you need."
+    image={{ src: '~/assets/images/tax-advisory.jpg', alt: 'tax advisory hero image' }}
+  />
+  <Features2
+    title="Reduce Your Taxes & Boost Business Profitability"
+    items={[
+      {
+        title: 'Optimize Your Tax System for Maximum Savings',
+        description:
+          'Our team provides a comprehensive tax review to optimize your tax structure, eliminate inefficiencies, and maximize your tax benefits in Singapore.',
+        icon: 'flat-color-icons:donate',
+      },
+      {
+        title: 'Unlock New Tax Opportunities',
+        description:
+          'We can help you reclaim any money you may have unknowingly paid to the government by maximizing tax concessions, cash repatriation, and incentive programs available to you.',
+        icon: 'flat-color-icons:bullish',
+      },
+      {
+        title: 'Accurate and Timely Filings & Returns',
+        description:
+          'Let us handle the complexities of tax filings. We will accurately calculate and file your tax returns on time, ensuring you avoid penalties and late fees',
+        icon: 'flat-color-icons:clock',
+      },
+      {
+        title: 'Up-to-Date with Tax Regulations',
+        description:
+          'Our team of tax professionals stays informed about the latest regional and local tax regulation changes, so you can be confident that your filings are compliant.',
+        icon: 'flat-color-icons:todo-list',
+      },
+      {
+        title: 'Strategic Tax Planning for Growth',
+        description:
+          ' Our tax experts guide businesses on major transactions and Asian expansion, ensuring tax-efficient execution and optimized growth.',
+        icon: 'flat-color-icons:genealogy',
+      },
+      {
+        title: 'IRAS Expertise at Your Service',
+        description:
+          'We are well-versed in working with the Inland Revenue Authority of Singapore (IRAS) and will ensure your tax filings are accurate, timely, and minimize your tax burden.',
+        icon: 'flat-color-icons:library',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </Features2>
+
+  <ServiceItem
+    title="Corporate Tax Compliance Services"
+    subtitle="Ensuring Accuracy and Compliance"
+    items={[
+      {
+        title: 'Corporate Tax',
+        description:
+          'Our expert tax team will guide you through all aspects of corporate tax compliance, ensuring your company meets all regulatory requirements. We offer the following services:',
+        details: [
+          "<b>Tax Incentive Applications</b>: We'll assist you in applying for relevant tax incentives to maximize your savings.",
+          "<b>Withholding Tax Compliance</b>: We'll help you navigate the complexities of withholding tax compliance, ensuring accurate reporting and payments.",
+          "<b>IRAS Investigations and Queries</b>: We'll represent you in any investigations or inquiries raised by the Inland Revenue Authority of Singapore (IRAS).",
+          "<b>Objections and Appeals</b>: We'll prepare and file objections and appeals on your behalf if necessary.",
+          "<b>Estimated Chargeable Income</b>: We'll prepare and file your estimated chargeable income to avoid penalties.",
+          "<b>Corporate Annual Income Tax Returns</b>: We'll prepare and file your annual corporate income tax returns, ensuring accuracy and adherence to deadlines.",
+          "<b>IRAS Assessment Verification</b>: We'll review and verify tax assessments issued by IRAS to ensure accuracy.",
+        ],
+        serviceType: 'Period: Annually',
+      },
+      {
+        title: 'Goods and Services Tax (GST)',
+        description:
+          'Businesses with an annual turnover exceeding S$1,000,000 are required to register for GST. Companies with a turnover below S$1,000,000 can choose to voluntarily register. All registered companies must file a quarterly GST return. We offer the following GST services:',
+        details: [
+          "<b>GST Registration Advice</b>: We'll advise companies with a turnover below S$1,000,000 whether voluntary registration is beneficial.",
+          "<b>GST Registration</b>: We'll assist in registering your company for GST.",
+          "<b>Quarterly GST Computation and Filing</b>: We'll accurately calculate and file your quarterly GST returns.",
+          "<b>Goods and Services Classification</b>: We'll classify your goods and services into taxable, non-taxable, and zero-rated categories for accurate GST reporting.",
+        ],
+        serviceType: 'Period: Quarterly',
+      },
+      {
+        title: 'Compliance Reporting',
+        details: [
+          "<b>Year-End Financial Statements</b>: We'll prepare your year-end financial statements in accordance with Singaporean law, using either our previously prepared monthly/quarterly accounts or your existing financial records.",
+          "<b>XBRL Conversion</b>: For companies with corporate shareholders or those subject to regulations, we'll convert your financial statements into the required XBRL format for filing with the relevant authorities.",
+        ],
+        serviceType: 'Available Plan: Annually',
+      },
+      {
+        title: 'GST Registration & Filing',
+        description:
+          "We'll guide you through the GST registration process and ensure all quarterly returns are accurately prepared and filed with the Inland Revenue Authority of Singapore (IRAS).",
+        serviceType: 'Available Plan: Quarterly',
+      },
+      {
+        title: 'Audit Assistance',
+        description:
+          "We'll advise you on whether your company needs an audit under Singaporean law. If an audit is required, we have established relationships with reputable local and international audit firms and will work closely with them to ensure a smooth and efficient process. We'll provide the necessary schedules, supporting documents, and answers to their queries, minimizing disruption to your business operations.",
+        serviceType: 'Available Plan: Annually',
+      },
+    ]}
+  />
+
+  <ServiceItem
+    title="Personal Tax Compliance Service"
+    subtitle="Maximizing Your Savings"
+    items={[
+      {
+        title: 'Personal Income Tax Return',
+        description:
+          "We will help you maximize your tax savings by identifying all eligible reliefs and deductions and ensuring they are incorporated into your tax return in the most tax-efficient way. If you receive income from sources such as rental properties, shares, or other assets, we'll assist you in determining deductible expenses and applicable tax exemptions. Our personal tax services include:",
+        details: [
+          "<b>Preparing and Filing Annual Tax Returns</b>: We'll prepare and file your annual personal income tax returns.",
+          "<b>IRAS Assessment Verification, Objections, and Appeals</b>: We'll review and verify your tax assessments issued by IRAS and represent you in lodging objections or appeals if necessary.",
+          "<b>Expatriate Remuneration Package Structuring</b>: We'll design and structure remuneration packages to enhance tax efficiencies for expatriate employees.",
+          "<b>Special Schemes and Tax Residency Advice</b>: We'll provide guidance on special tax schemes and tax residency requirements.",
+          "<b>Taxability of Shares or Options Received</b>: We'll advise on the tax implications of receiving shares or options.",
+          "<b>Tax Clearance Upon Employment Termination</b>: We'll assist you in obtaining tax clearance upon the termination of your employment in Singapore.",
+        ],
+        serviceType: 'Period: Annually',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </ServiceItem>
+</Layout>
