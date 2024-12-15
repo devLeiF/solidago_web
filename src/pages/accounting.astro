@@ -1,0 +1,64 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import ServiceItem from '~/components/widgets/ServiceItem.astro';
+
+const metadata = {
+  title: 'Accounting',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Accounting"
+    title="Accounting Services in Singapore"
+    subtitle="Focus on growing your business while we take care of the complexities of accounting. Our reliable accounting services provide you with peace of mind, knowing your books and records are accurately maintained and up-to-date."
+    image={{ src: '~/assets/images/accounting.jpg', alt: 'Accounting hero image' }}
+  />
+  <ServiceItem
+    title="Our Services"
+    items={[
+      {
+        title: 'Accounting and Bookkeeping',
+        details: [
+          "<b>Setup & Transition</b>: We'll establish your books and ledgers within Xero, QuickBooks, or other cloud-based accounting systems, and help you seamlessly transition from legacy systems.",
+          "<b>Bookkeeping</b>: We'll maintain accurate bookkeeping based on approved payment vouchers, claim forms, bank statements, and other accounting source information.",
+          "<b>Automated Bank Account Feeds</b>: We'll establish automated bank account feeds for efficient and secure transaction tracking.",
+          "<b>Online Payment Approval</b>: We'll set up online payment approval processes to enhance transparency and control.",
+        ],
+        serviceType: 'Available Plans: Monthly, Quarterly, or Annually',
+      },
+      {
+        title: 'Financial Reporting & Management Accounts',
+        description:
+          "We'll prepare and submit your accounts (Trial Balance, Income Statement, Balance Sheet, and Bank Reconciliation) to your local office and headquarters for approval.",
+        serviceType: 'Available Plans: Monthly, Quarterly, or Annually',
+      },
+      {
+        title: 'Compliance Reporting',
+        details: [
+          "<b>Year-End Financial Statements</b>: We'll prepare your year-end financial statements in accordance with Singaporean law, using either our previously prepared monthly/quarterly accounts or your existing financial records.",
+          "<b>XBRL Conversion</b>: For companies with corporate shareholders or those subject to regulations, we'll convert your financial statements into the required XBRL format for filing with the relevant authorities.",
+        ],
+        serviceType: 'Available Plan: Annually',
+      },
+      {
+        title: 'GST Registration & Filing',
+        description:
+          "We'll guide you through the GST registration process and ensure all quarterly returns are accurately prepared and filed with the Inland Revenue Authority of Singapore (IRAS).",
+        serviceType: 'Available Plan: Quarterly',
+      },
+      {
+        title: 'Audit Assistance',
+        description:
+          "We'll advise you on whether your company needs an audit under Singaporean law. If an audit is required, we have established relationships with reputable local and international audit firms and will work closely with them to ensure a smooth and efficient process. We'll provide the necessary schedules, supporting documents, and answers to their queries, minimizing disruption to your business operations.",
+        serviceType: 'Available Plan: Annually',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </ServiceItem>
+</Layout>

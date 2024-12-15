@@ -8,21 +8,7 @@ export const headerData = {
     },
     {
       text: 'Accounting',
-      subtext: 'Grow your business',
-      links: [
-        {
-          text: 'Accounting & bookkeeping',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Financial reporting',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'GST Services',
-          href: getPermalink('/homes/mobile-app'),
-        },
-      ],
+      href: getPermalink('/accounting'),
     },
     {
       text: 'Tax Advisory',
