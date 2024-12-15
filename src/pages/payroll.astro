@@ -1,0 +1,58 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import ServiceItem from '~/components/widgets/ServiceItem.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+const metadata = {
+  title: 'Tax Advisory',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Outsourced Payroll in Singapore"
+    title="Effortless Compliance and Accurate Payments"
+    subtitle="Entrust your company's payroll to our team of experienced and skilled professionals. We will manage your entire payroll process, ensuring compliance with all regulations and freeing you from time-consuming administrative tasks."
+    image={{ src: '~/assets/images/pay-roll.jpg', alt: 'tax advisory hero image' }}
+  />
+
+  <ServiceItem
+    title="Flexible and Scalable Payroll Solutions"
+    items={[
+      {
+        title: 'Initial Payroll Setup',
+        description:
+          "We'll seamlessly import your employee data and configure your payroll system to perfectly align with your company's unique compensation and benefits policies.",
+        serviceType: 'Service Type: One-off',
+      },
+      {
+        title: 'Monthly Payroll Services',
+        description:
+          "We'll keep your payroll running smoothly every month. You'll simply need to review and approve employee details (salary, leave, etc.) and we'll take care of the rest:",
+        details: [
+          "<b>Payroll Calculations</b>: We'll accurately calculate salaries, deductions, and statutory contributions.",
+          "<b>Statutory Filings</b>: We'll ensure all required statutory filings are made on time and correctly.",
+          "<b>Salary Payments</b>: We'll process and distribute employee salaries securely and efficiently.",
+          "<b>Payroll Paperwork</b>: We'll handle all necessary payroll documentation.",
+        ],
+        serviceType: 'Service Type: Monthly',
+      },
+      {
+        title: 'Year-End Services',
+        description:
+          "We'll simplify your year-end payroll tasks. We'll prepare and submit all required year-end returns, filings, and tax forms for each employee.",
+        serviceType: 'Service Type: Annually',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </ServiceItem>
+</Layout>

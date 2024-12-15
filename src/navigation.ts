@@ -16,25 +16,7 @@ export const headerData = {
     },
     {
       text: 'Payroll',
-      subtext: 'Reliable payroll services',
-      links: [
-        {
-          text: 'Payroll Outsource',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'CPF Application and Submission',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'IR8A/AIS Annual Filing',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'IR21 Tax Clearance',
-          href: getPermalink('/landing/pre-launch'),
-        },
-      ],
+      href: getPermalink('/payroll'),
     },
     {
       text: 'Company secretary',
