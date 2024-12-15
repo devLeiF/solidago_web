@@ -150,6 +150,13 @@ export interface ListItem {
   image?: Image;
 }
 
+export interface ServiceItem {
+  title?: string;
+  description?: string;
+  details?: Array<string>;
+  serviceType?: string;
+}
+
 export interface Price {
   title?: string;
   subtitle?: string;
@@ -234,6 +241,14 @@ export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' |
   actions?: string | CallToAction[];
   image?: string | unknown;
 }
+
+export interface ServiceItems extends Omit<Headline, 'classes'>, Widget {
+  title?: string;
+  subtitle?: string;
+  tagline?: string;
+  items?: Array<ServiceItem>;
+}
+
 
 export interface Team extends Omit<Headline, 'classes'>, Widget {
   team?: Array<TeamMember>;
