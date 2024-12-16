@@ -20,21 +20,7 @@ export const headerData = {
     },
     {
       text: 'Company secretary',
-      subtext: 'Effortless secretary services',
-      links: [
-        {
-          text: 'Registered Address',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Corporate Secretary',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Add-on Services',
-          href: getPermalink('tutorials', 'category'),
-        },
-      ],
+      href: getPermalink('/company-secretary'),
     },
     {
       text: 'About Us',
