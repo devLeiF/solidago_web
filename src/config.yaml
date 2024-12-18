@@ -1,5 +1,7 @@
 site:
-  name: AstroWind
+  name: Solidago Advisory
+  legalName: Solidago Advisory Pte. Ltd.
+  # TODO: change the site address to your own later
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +11,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
+    default: Solidago Advisory
+    template: '%s — Solidago Advisory'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Solidago Advisory
     images:
       - url: '~/assets/images/default.png'
         width: 1200
