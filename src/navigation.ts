@@ -28,12 +28,11 @@ export const headerData = {
       href: 'about',
     },
   ],
-  // keep this as a reference in the future.
-  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
   links: [],
+  actions: [{   variant: 'primary', text: 'Contact us', href: getPermalink('/contact') }],
   descriptions: [
     '16 Collyer Quay, #12-01 Collyer Quay Centre, Singapore 049318',
     'UEN: 202310293N',
