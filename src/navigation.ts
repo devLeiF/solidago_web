@@ -1,5 +1,6 @@
 import { SITE } from 'astrowind:config';
-import { getPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
+import type { Props } from './components/widgets/Footer.astro';
 
 export const headerData = {
   links: [
@@ -28,6 +29,7 @@ export const headerData = {
       href: 'about',
     },
   ],
+  actions: [{   variant: 'secondary', text: 'Contact us', href: getPermalink('/contact') }],
 };
 
 export const footerData = {
@@ -46,4 +48,4 @@ export const footerData = {
     { ariaLabel: 'inkedin', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/solidago-advisory-pte-ltd/' },
   ],
   footNote: `${SITE?.legalName} © 2025`,
-};
+} as Props;

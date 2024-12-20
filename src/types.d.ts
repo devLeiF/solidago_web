@@ -227,8 +227,22 @@ export interface Collapse {
   classes?: Record<string, string>;
 }
 
+export interface SelectItem {
+  value: string;
+  text: string;
+}
+
+export interface Select {
+  options: Array<SelectItem>;
+  selected?: string;
+  name?: string;
+  label?: string;
+  classes?: Record<string, string>;
+}
+
 export interface Form {
   inputs?: Array<Input>;
+  selects?: Array<Select>;
   textarea?: Textarea;
   disclaimer?: Disclaimer;
   button?: string;
