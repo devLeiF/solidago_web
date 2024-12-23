@@ -33,21 +33,18 @@ const {
         {
           items.map(({ title, description, details, serviceType }) => (
             <div>
-              {title && (<h3 class="text-2xl font-bold my-4 md:my-6">{title}</h3>)}
-              {description && (<p class="text-lg">{description}</p>)}
-              {details && (
-                    <ul class="marker:text-accent list-inside list-disc ">
-                    {details.map(
-                        detail => (
-                            <li class="text-lg" set:html={detail}>
-                                
-                            </li>)  
-                    )}
-                    </ul>
+              <div>
+                {title && <h3 class="text-2xl font-bold my-4 md:my-6">{title}</h3>}
+                {description && <p class="text-lg">{description}</p>}
+                {details && (
+                  <ul class="marker:text-accent list-inside list-disc ">
+                    {details.map((detail) => (
+                      <li class="text-lg" set:html={detail}></li>
+                    ))}
+                  </ul>
                 )}
-            </div>
-            <div>
-              {serviceType && (<h3 class="text-secondary dark:text-blue-200 font-bold">{serviceType}</h3>)}
+              </div>
+              <div>{serviceType && <h3 class="text-secondary dark:text-blue-200 font-bold">{serviceType}</h3>}</div>
             </div>
           ))
         }
