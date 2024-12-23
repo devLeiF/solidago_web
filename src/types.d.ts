@@ -266,7 +266,6 @@ export interface ServiceItems extends Omit<Headline, 'classes'>, Widget {
   items?: Array<ServiceItem>;
 }
 
-
 export interface Team extends Omit<Headline, 'classes'>, Widget {
   team?: Array<TeamMember>;
 }
@@ -344,4 +343,4 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
   callToAction?: CallToAction;
 }
 
-export interface Contact extends Omit<Headline, 'classes'>, Form, Widget { }
+export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}

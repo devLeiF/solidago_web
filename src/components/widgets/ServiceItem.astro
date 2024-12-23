@@ -39,7 +39,7 @@ const {
                 {details && (
                   <ul class="marker:text-accent list-inside list-disc ">
                     {details.map((detail) => (
-                      <li class="text-lg" set:html={detail}></li>
+                      <li class="text-lg" set:html={detail} />
                     ))}
                   </ul>
                 )}
