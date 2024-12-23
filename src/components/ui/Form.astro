@@ -18,11 +18,11 @@ const { inputs, selects, textarea, disclaimer, button = 'Contact us', descriptio
     background-repeat: no-repeat;
   }
 </style>
-<form>
+<form method="POST">
   {
     inputs &&
       inputs.map(
-        ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '' }) =>
+        ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '', required = false }) =>
           name && (
             <div class="mb-6">
               {label && (
@@ -36,6 +36,7 @@ const { inputs, selects, textarea, disclaimer, button = 'Contact us', descriptio
                 id={name}
                 autocomplete={autocomplete}
                 placeholder={placeholder}
+                required={required ? true : undefined}
                 class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
               />
             </div>
@@ -77,6 +78,7 @@ const { inputs, selects, textarea, disclaimer, button = 'Contact us', descriptio
           name={textarea.name ? textarea.name : 'message'}
           rows={textarea.rows ? textarea.rows : 4}
           placeholder={textarea.placeholder}
+          required={textarea.required ? true : undefined}
           class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
         />
       </div>
@@ -88,7 +90,7 @@ const { inputs, selects, textarea, disclaimer, button = 'Contact us', descriptio
       <div class="mt-3 flex items-start">
         <div class="flex mt-0.5">
           <input
-            id="disclaimer"
+            id={disclaimer.id ?? 'disclaimer'}
             name="disclaimer"
             type="checkbox"
             class="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
