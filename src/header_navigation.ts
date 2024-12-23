@@ -26,7 +26,7 @@ export const headerData = {
     },
     {
       text: 'About Us',
-      href: 'about',
+      href: getPermalink('/about'),
     },
   ],
   actions: [{ variant: 'secondary', text: 'Contact us', href: getPermalink('/contact') }],
