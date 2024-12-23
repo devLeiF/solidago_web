@@ -2,7 +2,7 @@ site:
   name: Solidago Advisory
   legalName: Solidago Advisory Pte. Ltd.
   # TODO: change the site address to your own later
-  site: 'https://astrowind.vercel.app'
+  site: 'https://solidago.sg'
   base: '/'
   trailingSlash: false
 
