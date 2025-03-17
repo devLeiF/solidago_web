@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: December 23, 2024
+_Last updated_: Mar 17, 2025
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -18,9 +18,7 @@ For the purposes of these Terms and Conditions:
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
 - **Country** refers to: Singapore
-
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Solidago Advisory Pte. Ltd., 16 Collyer Quay, #12-01 Collyer Quay Centre, Singapore 049318.
-
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Solidago Advisory Pte. Ltd., 101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 
 - **Service** refers to the Website.

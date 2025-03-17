@@ -35,7 +35,7 @@ export const headerData = {
 export const footerData = {
   links: [],
   actions: [{ variant: 'primary', text: 'Contact us', href: getPermalink('/contact') }],
-  descriptions: ['16 Collyer Quay, #12-01 Collyer Quay Centre, Singapore 049318', 'UEN: 202310293N'],
+  descriptions: ['101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533', 'UEN: 202310293N'],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
