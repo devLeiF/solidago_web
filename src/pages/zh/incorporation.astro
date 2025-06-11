@@ -1,0 +1,94 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import ServiceItem from '~/components/widgets/ServiceItem.astro';
+import { useTranslations } from '~/utils/i18n';
+
+const t = useTranslations('zh');
+
+const metadata = {
+  title: t('nav.incorporation'),
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline={t('incorporationPage.tagline')}
+    title="在新加坡开始您的<span class='text-accent'>商业之旅</span>"
+    subtitle={t('incorporationPage.subtitle')}
+    image={{ src: '~/assets/images/hero-image.jpg', alt: 'Company incorporation hero image' }}
+  />
+
+  <Features2
+    title="为什么选择新加坡进行公司注册？"
+    items={[
+      {
+        title: '战略地理位置',
+        description: '新加坡位于亚洲中心，是进入东南亚市场的理想门户。',
+        icon: 'flat-color-icons:globe',
+      },
+      {
+        title: '友好的商业环境',
+        description: '新加坡拥有世界级的基础设施和稳定的政治环境，为企业提供优越的营商环境。',
+        icon: 'flat-color-icons:businessman',
+      },
+      {
+        title: '有竞争力的税率',
+        description: '新加坡实行具有竞争力的企业税率和各种税务激励措施。',
+        icon: 'flat-color-icons:calculator',
+      },
+      {
+        title: '高效的注册流程',
+        description: '在新加坡注册公司流程简单高效，通常可在1-2个工作日内完成。',
+        icon: 'flat-color-icons:ok',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </Features2>
+
+  <ServiceItem
+    title="我们的公司注册服务"
+    subtitle="全面的企业设立支持"
+    items={[
+      {
+        title: '公司注册',
+        description: '我们提供完整的公司注册服务，确保您的企业快速合规地在新加坡成立。',
+        details: [
+          "<b>公司名称保留</b>：协助您选择和保留合适的公司名称。",
+          "<b>公司注册</b>：完成所有必要的注册手续和文件提交。",
+          "<b>注册地址提供</b>：为您的公司提供新加坡注册地址。",
+          "<b>公司秘书委任</b>：委任合格的公司秘书以满足法定要求。",
+          "<b>董事委任</b>：协助委任本地董事（如需要）。",
+        ],
+        serviceType: '服务时间：1-2个工作日',
+      },
+      {
+        title: '银行开户协助',
+        description: '我们协助您在新加坡的主要银行开设企业银行账户。',
+        details: [
+          "<b>银行选择建议</b>：根据您的业务需要推荐合适的银行。",
+          "<b>文件准备</b>：协助准备银行开户所需的所有文件。",
+          "<b>银行预约安排</b>：为您安排与银行的会面。",
+          "<b>开户流程支持</b>：全程陪同银行开户流程。",
+        ],
+        serviceType: '服务时间：2-4周',
+      },
+      {
+        title: '合规和许可证',
+        description: '确保您的业务符合所有相关法规和许可要求。',
+        details: [
+          "<b>营业执照申请</b>：协助申请所需的营业执照和许可证。",
+          "<b>行业特定许可</b>：为特定行业申请专业许可证。",
+          "<b>合规咨询</b>：提供持续的合规建议和支持。",
+          "<b>年度合规</b>：确保年度申报和合规要求得到满足。",
+        ],
+        serviceType: '根据业务类型而定',
+      },
+    ]}
+  />
+</Layout> 

@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "incorporation": "Incorporation",
+    "accounting": "Accounting", 
+    "taxAdvisory": "Tax Advisory",
+    "payroll": "Payroll",
+    "companySecretary": "Company secretary",
+    "aboutUs": "About Us",
+    "contactUs": "Contact us",
+    "pricing": "Pricing"
+  },
+  "hero": {
+    "title": "Simplify your business management with our expert support",
+    "subtitle": "Enjoy stress-free accounting, taxation, payroll, and company secretary service with Solidago. Register for peace of mind.",
+    "contactUs": "Contact us",
+    "learnMore": "Learn more"
+  },
+  "features": {
+    "title": "Partner with us for business success in Singapore.",
+    "subtitle": "Expand your business in Singapore with confidence. Our professionals ensure seamless, compliant expansion by expertly handling all regional regulatory complexities.",
+    "businessSetup": {
+      "title": "Business set up",
+      "businessConsulting": "Business consulting",
+      "companyIncorporation": "Company incorporation"
+    },
+    "accountingTaxation": {
+      "title": "Accounting and taxation",
+      "bookkeeping": "Bookkeeping",
+      "financialReporting": "Financial reporting", 
+      "gstCompliance": "GST compliance",
+      "corporateTax": "Corporate tax compliance",
+      "personalTax": "Personal tax compliance"
+    },
+    "companySecretary": {
+      "title": "Company secretary",
+      "registeredAddress": "Registered address",
+      "companySecretary": "Company secretary",
+      "annualReturn": "Annual return filing",
+      "xbrlCompilation": "XBRL compilation"
+    },
+    "addOnServices": {
+      "title": "Add on services",
+      "payrollOutsourcing": "Payroll outsourcing",
+      "cpfRegistration": "CPF registration and submission",
+      "ir8aFiling": "IR8A/AIS annual filing",
+      "ir21TaxClearance": "IR21 Tax clearance",
+      "corpPassRegistration": "CorpPass registration",
+      "andMore": "And more"
+    }
+  },
+  "incorporation": {
+    "title": "Company Incorporation in Singapore",
+    "subtitle": "We simplify the company incorporation process in Singapore with our streamlined, efficient service.",
+    "description": "Starting a business in Singapore has never been easier. Our expert team handles all aspects of company incorporation, ensuring compliance with local regulations while saving you time and effort.",
+    "whyChoose": "Why Choose Our Incorporation Service?",
+    "fastProcessing": "Fast Processing",
+    "fastDescription": "Complete incorporation process within 1-2 business days",
+    "compliance": "Full Compliance", 
+    "complianceDescription": "Ensure all regulatory requirements are met from day one",
+    "support": "Ongoing Support",
+    "supportDescription": "Post-incorporation support for all your business needs"
+  },
+  "accounting": {
+    "title": "Professional Accounting Services",
+    "subtitle": "Comprehensive accounting solutions tailored for your business needs in Singapore.",
+    "description": "Our qualified accountants provide reliable bookkeeping, financial reporting, and compliance services to keep your business running smoothly."
+  },
+  "taxAdvisory": {
+    "title": "Tax Advisory Services",
+    "subtitle": "Expert tax planning and compliance services to optimize your tax position.",
+    "description": "Navigate Singapore's tax landscape with confidence. Our tax specialists provide strategic advice and ensure timely compliance with all tax obligations."
+  },
+  "payroll": {
+    "title": "Payroll Management Services", 
+    "subtitle": "Efficient payroll processing and CPF compliance for your business.",
+    "description": "Let us handle your payroll complexities while you focus on growing your business. We ensure accurate processing and compliance with Singapore's employment regulations."
+  },
+  "companySecretaryPage": {
+    "title": "Company Secretary Services",
+    "subtitle": "Professional company secretarial services to ensure corporate compliance.",
+    "description": "Stay compliant with Singapore's corporate governance requirements. Our experienced company secretaries handle all statutory obligations and filings."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for professional business services.",
+    "getInTouch": "Get in touch",
+    "description": "Ready to streamline your business operations? Contact us today for a consultation."
+  },
+  "about": {
+    "title": "About Solidago Advisory",
+    "subtitle": "Your trusted partner for business success in Singapore.",
+    "description": "We are a team of experienced professionals dedicated to helping businesses thrive in Singapore's dynamic market."
+  },
+  "footer": {
+    "address": "101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533",
+    "uen": "UEN: 202310293N",
+    "terms": "Terms",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2025"
+  },
+  "common": {
+    "readMore": "Read more",
+    "getStarted": "Get started",
+    "learnMore": "Learn more",
+    "services": "Services",
+    "home": "Home"
+  },
+  "taxAdvisoryPage": {
+    "tagline": "Singapore Tax Services",
+    "title": "Get Your Tax Right With Our Expertise",
+    "subtitle": "Our experienced team provides comprehensive tax services to help you fulfill your tax obligations and ensure compliance with Singapore tax regulations. Whether you're seeking to optimize your tax planning strategy or need assistance with tax filings, we can provide the expertise and support you need.",
+    "featuresTitle": "Get tax right & Tax compliance made easy"
+  },
+  "accountingPage": {
+    "tagline": "Singapore Accounting Services", 
+    "title": "Worry-Free Accounting With Us",
+    "subtitle": "Focus on growing your business while we take care of the complexities of accounting. Our reliable accounting services provide you with peace of mind, knowing your books and records are accurately maintained and up-to-date."
+  },
+  "incorporationPage": {
+    "tagline": "Singapore Company Incorporation",
+    "title": "Start Your Business Journey in Singapore",
+    "subtitle": "Navigate the complexities of business setup with our expert guidance. We ensure your company incorporation is seamless, compliant, and sets the foundation for your business success in Singapore."
+  },
+  "payrollPage": {
+    "tagline": "Singapore Payroll Services",
+    "title": "Streamlined Payroll Management",
+    "subtitle": "Let us handle your payroll complexities while you focus on growing your business. Our comprehensive payroll services ensure accuracy, compliance, and timely processing."
+  },
+  "companySecretaryPageFull": {
+    "tagline": "Singapore Company Secretary Services",
+    "title": "Professional Company Secretarial Support",
+    "subtitle": "Stay compliant with Singapore's corporate governance requirements. Our experienced company secretaries handle all statutory obligations and filings, ensuring your business remains in good standing."
+  }
+} 

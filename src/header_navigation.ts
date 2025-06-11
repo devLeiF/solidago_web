@@ -1,51 +1,76 @@
 import { SITE } from 'astrowind:config';
 import { getPermalink } from './utils/permalinks';
+import { useTranslations, type SupportedLanguage, getLocalizedUrl } from './utils/i18n';
 import type { Props } from './components/widgets/Header.astro';
 
-export const headerData = {
-  links: [
-    {
-      text: 'Incorporation',
-      href: getPermalink('/incorporation'),
-    },
-    {
-      text: 'Accounting',
-      href: getPermalink('/accounting'),
-    },
-    {
-      text: 'Tax Advisory',
-      href: getPermalink('/tax-advisory'),
-    },
-    {
-      text: 'Payroll',
-      href: getPermalink('/payroll'),
-    },
-    {
-      text: 'Company secretary',
-      href: getPermalink('/company-secretary'),
-    },
-    {
-      text: 'About Us',
-      href: getPermalink('/about'),
-    },
-  ],
-  actions: [{ variant: 'secondary', text: 'Contact us', href: getPermalink('/contact') }],
-} as Props;
+export function getHeaderData(lang: SupportedLanguage = 'en') {
+  const t = useTranslations(lang);
+  
+  // Create localized URLs based on the current language
+  const localizeUrl = (path: string) => {
+    const baseUrl = getPermalink(path);
+    return getLocalizedUrl(baseUrl, lang);
+  };
+  
+  return {
+    links: [
+      {
+        text: t('nav.incorporation'),
+        href: localizeUrl('/incorporation'),
+      },
+      {
+        text: t('nav.accounting'),
+        href: localizeUrl('/accounting'),
+      },
+      {
+        text: t('nav.taxAdvisory'),
+        href: localizeUrl('/tax-advisory'),
+      },
+      {
+        text: t('nav.payroll'),
+        href: localizeUrl('/payroll'),
+      },
+      {
+        text: t('nav.companySecretary'),
+        href: localizeUrl('/company-secretary'),
+      },
+      {
+        text: t('nav.aboutUs'),
+        href: localizeUrl('/about'),
+      },
+    ],
+    actions: [{ variant: 'secondary', text: t('nav.contactUs'), href: localizeUrl('/contact') }],
+  } as Props;
+}
 
-export const footerData = {
-  links: [],
-  actions: [{ variant: 'primary', text: 'Contact us', href: getPermalink('/contact') }],
-  descriptions: ['101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533', 'UEN: 202310293N'],
-  secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  ],
-  socialLinks: [
-    {
-      ariaLabel: 'inkedin',
-      icon: 'tabler:brand-linkedin',
-      href: 'https://www.linkedin.com/company/solidago-advisory-pte-ltd/',
-    },
-  ],
-  footNote: `${SITE?.legalName} © 2025`,
-} as Props;
+export const headerData = getHeaderData();
+
+export function getFooterData(lang: SupportedLanguage = 'en') {
+  const t = useTranslations(lang);
+  
+  // Create localized URLs based on the current language
+  const localizeUrl = (path: string) => {
+    const baseUrl = getPermalink(path);
+    return getLocalizedUrl(baseUrl, lang);
+  };
+  
+  return {
+    links: [],
+    actions: [{ variant: 'primary', text: t('nav.contactUs'), href: localizeUrl('/contact') }],
+    descriptions: [t('footer.address'), t('footer.uen')],
+    secondaryLinks: [
+      { text: t('footer.terms'), href: localizeUrl('/terms') },
+      { text: t('footer.privacy'), href: localizeUrl('/privacy') },
+    ],
+    socialLinks: [
+      {
+        ariaLabel: 'linkedin',
+        icon: 'tabler:brand-linkedin',
+        href: 'https://www.linkedin.com/company/solidago-advisory-pte-ltd/',
+      },
+    ],
+    footNote: `${SITE?.legalName} ${t('footer.copyright')}`,
+  } as Props;
+}
+
+export const footerData = getFooterData();

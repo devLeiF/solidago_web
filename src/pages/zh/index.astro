@@ -4,10 +4,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features2WithList from '~/components/widgets/Features2WithList.astro';
 import { getPermalink } from '~/utils/permalinks';
-import { useTranslations, getLangFromUrl, getLocalizedUrl } from '~/utils/i18n';
+import { useTranslations } from '~/utils/i18n';
 
-const currentLang = getLangFromUrl(Astro.url);
-const t = useTranslations(currentLang);
+const t = useTranslations('zh');
 
 const metadata = {
   title: 'Solidago Advisory',
@@ -23,7 +22,7 @@ const metadata = {
       {
         variant: 'primary',
         text: t('hero.contactUs'),
-        href: getLocalizedUrl(getPermalink('/contact'), currentLang),
+        href: getPermalink('/zh/contact'),
         target: '_blank',
       },
       // { text: t('hero.learnMore'), href: '#features' },
@@ -31,7 +30,7 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.jpg', alt: 'Solidago Hero Image' }}
   >
     <Fragment slot="title">
-      {t('hero.title').split('expert')[0]}<span class="text-accent dark:text-white highlight">expert</span>{t('hero.title').split('expert')[1] || ' support'}
+      {t('hero.title').split('专业')[0]}<span class="text-accent dark:text-white highlight">专业</span>{t('hero.title').split('专业')[1] || '支持'}
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -89,4 +88,4 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
     </Fragment>
   </Features2WithList>
-</Layout>
+</Layout> 

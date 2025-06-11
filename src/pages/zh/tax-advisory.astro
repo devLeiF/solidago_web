@@ -1,0 +1,129 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import ServiceItem from '~/components/widgets/ServiceItem.astro';
+import { useTranslations } from '~/utils/i18n';
+
+const t = useTranslations('zh');
+
+const metadata = {
+  title: t('nav.taxAdvisory'),
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline={t('taxAdvisoryPage.tagline')}
+    title="通过我们的专业知识确保您的<span class='text-accent'>税务</span>正确"
+    subtitle={t('taxAdvisoryPage.subtitle')}
+    image={{ src: '~/assets/images/tax-advisory.jpg', alt: 'tax advisory hero image' }}
+  />
+  <Features2
+    title={t('taxAdvisoryPage.featuresTitle')}
+    items={[
+      {
+        title: '优化您的税务系统以实现最大节省',
+        description:
+          '我们的团队提供全面的税务审查，优化您的税务结构，消除低效率，并最大化您在新加坡的税务优惠。',
+        icon: 'flat-color-icons:donate',
+      },
+      {
+        title: '发掘新的税务机会',
+        description:
+          '我们可以通过最大化税务减免、现金汇回和您可获得的激励计划，帮助您收回可能在不知情情况下支付给政府的资金。',
+        icon: 'flat-color-icons:bullish',
+      },
+      {
+        title: '准确及时的申报和报税',
+        description:
+          '让我们处理税务申报的复杂性。我们将准确计算并及时提交您的税务申报，确保您避免罚款和滞纳金。',
+        icon: 'flat-color-icons:clock',
+      },
+      {
+        title: '紧跟税务法规最新变化',
+        description:
+          '我们的税务专业团队了解最新的区域和地方税务法规变化，让您可以放心您的申报是合规的。',
+        icon: 'flat-color-icons:todo-list',
+      },
+      {
+        title: '增长的战略税务规划',
+        description:
+          '我们的税务专家为企业在重大交易和亚洲扩张方面提供指导，确保税务高效执行和优化增长。',
+        icon: 'flat-color-icons:genealogy',
+      },
+      {
+        title: 'IRAS专业知识为您服务',
+        description:
+          '我们精通与新加坡内陆税务局（IRAS）的合作，将确保您的税务申报准确、及时，并最小化您的税务负担。',
+        icon: 'flat-color-icons:library',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </Features2>
+
+  <ServiceItem
+    title="企业税务合规服务"
+    subtitle="确保准确性和合规性"
+    items={[
+      {
+        title: '企业税',
+        description:
+          '我们的专业税务团队将指导您完成企业税务合规的各个方面，确保您的公司满足所有监管要求。我们提供以下服务：',
+        details: [
+          "<b>税务激励申请</b>：我们将协助您申请相关的税务激励以最大化您的节省。",
+          "<b>预扣税合规</b>：我们将帮助您应对预扣税合规的复杂性，确保准确报告和支付。",
+          "<b>IRAS调查和查询</b>：我们将在新加坡内陆税务局（IRAS）提出的任何调查或查询中代表您。",
+          "<b>异议和上诉</b>：如有必要，我们将代表您准备和提交异议和上诉。",
+          "<b>预估应税收入</b>：我们将准备和提交您的预估应税收入以避免罚款。",
+          "<b>企业年度所得税申报</b>：我们将准备和提交您的年度企业所得税申报，确保准确性和遵守截止日期。",
+          "<b>IRAS评估核实</b>：我们将审查和核实IRAS发出的税务评估以确保准确性。",
+        ],
+        serviceType: '周期：年度',
+      },
+      {
+        title: '货品和服务税（GST）',
+        description:
+          '年营业额超过100万新元的企业必须注册GST。营业额低于100万新元的公司可以选择自愿注册。所有注册公司必须每季度提交GST申报。我们提供以下GST服务：',
+        details: [
+          "<b>GST注册建议</b>：我们将建议营业额低于100万新元的公司是否自愿注册有益。",
+          "<b>GST注册</b>：我们将协助您的公司注册GST。",
+          "<b>季度GST计算和申报</b>：我们将准确计算和提交您的季度GST申报。",
+          "<b>货品和服务分类</b>：我们将您的货品和服务分类为应税、非应税和零税率类别，以确保准确的GST报告。",
+        ],
+        serviceType: '周期：季度',
+      },
+    ]}
+  />
+
+  <ServiceItem
+    title="个人税务合规服务"
+    subtitle="最大化您的节省"
+    items={[
+      {
+        title: '个人所得税申报',
+        description:
+          "我们将通过识别所有符合条件的减免和扣除，并确保以最税务高效的方式将其纳入您的税务申报中，帮助您最大化税务节省。如果您从租赁物业、股票或其他资产等来源获得收入，我们将协助您确定可扣除费用和适用的税务豁免。我们的个人税务服务包括：",
+        details: [
+          "<b>准备和提交年度税务申报</b>：我们将准备和提交您的年度个人所得税申报。",
+          "<b>IRAS评估核实、异议和上诉</b>：我们将审查和核实IRAS发出的税务评估，并在必要时代表您提出异议或上诉。",
+          "<b>外籍人员薪酬方案结构</b>：我们将设计和构建薪酬方案以提高外籍员工的税务效率。",
+          "<b>特殊计划和税务居住建议</b>：我们将就特殊税务计划和税务居住要求提供指导。",
+          "<b>收到股票或期权的税务影响</b>：我们将就收到股票或期权的税务影响提供建议。",
+          "<b>就业终止时的税务清关</b>：我们将协助您在新加坡就业终止时获得税务清关。",
+        ],
+        serviceType: '周期：年度',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </ServiceItem>
+</Layout> 

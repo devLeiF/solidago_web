@@ -1,0 +1,73 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import ServiceItem from '~/components/widgets/ServiceItem.astro';
+import { useTranslations } from '~/utils/i18n';
+
+const t = useTranslations('zh');
+
+const metadata = {
+  title: t('nav.accounting'),
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline={t('accountingPage.tagline')}
+    title="与我们一起享受<span class='text-accent'>无忧</span>会计服务"
+    subtitle={t('accountingPage.subtitle')}
+    image={{ src: '~/assets/images/accounting.jpg', alt: 'Accounting hero image' }}
+  />
+  <ServiceItem
+    title="我们的服务"
+    items={[
+      {
+        title: '会计和记账',
+        details: [
+          "<b>设置和过渡</b>：我们将在Xero、QuickBooks或其他基于云的会计系统中建立您的账簿和分类账，并帮助您从传统系统无缝过渡。",
+          "<b>记账</b>：我们将基于已批准的付款凭证、报销单、银行对账单和其他会计原始信息维护准确的记账。",
+          "<b>自动银行账户数据流</b>：我们将建立自动银行账户数据流，实现高效和安全的交易跟踪。",
+          "<b>在线付款审批</b>：我们将设置在线付款审批流程，以提高透明度和控制力。",
+        ],
+        serviceType: '可选计划：月度、季度或年度',
+      },
+      {
+        title: '财务报告和管理账目',
+        description:
+          "我们将准备并提交您的账目（试算平衡表、损益表、资产负债表和银行对账）给您的本地办公室和总部审批。",
+        serviceType: '可选计划：月度、季度或年度',
+      },
+      {
+        title: '合规报告',
+        details: [
+          "<b>年终财务报表</b>：我们将根据新加坡法律，使用我们之前准备的月度/季度账目或您现有的财务记录，为您准备年终财务报表。",
+          "<b>XBRL转换</b>：对于有企业股东或受法规约束的公司，我们将把您的财务报表转换为所需的XBRL格式，以便向相关当局申报。",
+        ],
+        serviceType: '可选计划：年度',
+      },
+      {
+        title: '货品和服务税（GST）',
+        description:
+          '年营业额超过100万新元的企业必须注册GST。营业额低于100万新元的公司可以选择自愿注册。所有注册公司必须每季度提交GST申报。我们提供以下GST服务：',
+        details: [
+          "<b>GST注册建议</b>：我们将建议营业额低于100万新元的公司是否自愿注册有益。",
+          "<b>GST注册</b>：我们将协助您的公司注册GST。",
+          "<b>季度GST计算和申报</b>：我们将准确计算和提交您的季度GST申报。",
+          "<b>货品和服务分类</b>：我们将您的货品和服务分类为应税、非应税和零税率类别，以确保准确的GST报告。",
+        ],
+        serviceType: '周期：季度',
+      },
+      {
+        title: '审计协助',
+        description:
+          "我们将建议您的公司根据新加坡法律是否需要审计。如果需要审计，我们与知名的本地和国际审计公司建立了关系，并将与他们密切合作，确保流程顺利高效。我们将提供必要的明细表、支持文件和回答他们的询问，最大限度地减少对您业务运营的干扰。",
+        serviceType: '可选计划：年度',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </ServiceItem>
+</Layout> 

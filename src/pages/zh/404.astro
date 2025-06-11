@@ -1,0 +1,28 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: '页面未找到',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText title="页面未找到" subtitle="抱歉，我们找不到您要查找的页面。">
+    <Fragment slot="title">
+      404
+      <br />
+      <span class="text-accent highlight"> 页面未找到</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span class="mb-6 text-lg text-muted dark:text-slate-400">
+        抱歉，我们找不到您要查找的页面。也许您可以找到您要在我们的<a
+          class="text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-200"
+          href="/"
+        >
+          主页
+        </a>上寻找的内容。
+      </span>
+    </Fragment>
+  </HeroText>
+</Layout> 

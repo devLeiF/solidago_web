@@ -1,0 +1,30 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { useTranslations } from '~/utils/i18n';
+
+const t = useTranslations('zh');
+
+const metadata = {
+  title: t('contact.title'),
+  description: t('contact.description'),
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">{t('contact.title')}</Fragment>
+    <Fragment slot="subtitle">{t('contact.subtitle')}</Fragment>
+  </Hero>
+  
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
+    <div class="mx-auto max-w-3xl text-center pb-10 md:pb-16">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+        {t('contact.getInTouch')}
+      </h2>
+      <p class="text-xl text-muted dark:text-slate-400">
+        {t('contact.description')}
+      </p>
+    </div>
+  </section>
+</Layout> 

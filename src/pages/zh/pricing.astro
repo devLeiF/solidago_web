@@ -1,0 +1,248 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: '价格',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="价格"
+    title="为每个旅程提供出色的价格"
+    subtitle="选择与您的目标完美契合的计划。"
+  />
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    title="我们的价格"
+    subtitle="只为您需要的服务付费"
+    prices={[
+      {
+        title: '基础版',
+        subtitle: '个人使用的最佳选择',
+        price: 29,
+        period: '每月',
+        items: [
+          {
+            description: 'Etiam in libero, et volutpat',
+          },
+          {
+            description: 'Aenean ac nunc dolor tristique',
+          },
+          {
+            description: 'Cras scelerisque accumsan lib',
+          },
+          {
+            description: 'In hac habitasse',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: '开始使用',
+          href: '#',
+        },
+      },
+      {
+        title: '标准版',
+        subtitle: '小团队的最佳选择',
+        price: 69,
+        period: '每月',
+        items: [
+          {
+            description: 'Proin vel laoreet',
+          },
+          {
+            description: 'Ut efficitur habitasse egestas',
+          },
+          {
+            description: 'Volutpat hac curabitur',
+          },
+          {
+            description: 'Pellentesque blandit ut nibh',
+          },
+          {
+            description: 'Donec fringilla sem',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: '开始使用',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: '热门',
+      },
+      {
+        title: '高级版',
+        subtitle: '企业的最佳选择',
+        price: 199,
+        period: '每月',
+        items: [
+          {
+            description: 'Curabitur suscipit risus',
+          },
+          {
+            description: 'Aliquam habitasse malesuada',
+          },
+          {
+            description: 'Suspendisse sit amet blandit',
+          },
+          {
+            description: 'Suspendisse auctor blandit dui',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: '开始使用',
+          href: '#',
+        },
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="价格相关功能"
+    subtitle="发现选择我们计划的优势"
+    columns={2}
+    items={[
+      {
+        title: '分层定价计划',
+        description: '从一系列定价计划中选择，旨在适应不同的预算和要求。',
+        icon: 'tabler:stairs',
+      },
+      {
+        title: '透明定价',
+        description: '清楚显示每个计划的定价细节，没有隐藏费用或意外收费。',
+        icon: 'tabler:flip-vertical',
+      },
+      {
+        title: '安全付款方式',
+        description: '安全的支付网关，在交易过程中保护您的财务信息。',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: '即时访问',
+        description: '订阅后立即访问您所选计划的功能和模板。',
+        icon: 'tabler:accessible',
+      },
+      {
+        title: '升级价值',
+        description: '升级到更高级的计划，解锁更多功能和优势，获得增强体验。',
+        icon: 'tabler:chevrons-up',
+      },
+      {
+        title: '24小时支持',
+        description: '通过实时聊天、电子邮件或电话回答问题，每个日历日。',
+        icon: 'tabler:headset',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="从计划到创意的引导之旅"
+    tagline="简化流程"
+    isReversed={true}
+    items={[
+      {
+        title: '探索计划',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: '选择计划',
+        icon: 'tabler:number-2',
+      },
+      {
+        title: '注册 / 登录',
+        icon: 'tabler:number-3',
+      },
+      {
+        title: '审查订单',
+        icon: 'tabler:number-4',
+      },
+      {
+        title: '输入付款详情',
+        icon: 'tabler:number-5',
+      },
+      {
+        title: '确认',
+        icon: 'tabler:number-6',
+      },
+      {
+        title: '下载并开始使用模板',
+        icon: 'tabler:number-7',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="定价常见问题"
+    subtitle="选择正确的计划很重要，我们在这里回答您的问题。如果您对我们的定价选项有疑问，您来对地方了。"
+    items={[
+      {
+        title: '哪个定价计划最适合我？',
+        description:
+          "为了确定最适合您的定价计划，请考虑您的特定需求和目标。如果您正在寻找基本功能，我们的'基础版'计划可能就足够了。对于更高级的功能，'标准版'或'高级版'计划将是更好的选择。",
+      },
+      {
+        title: '价格中包含哪些付款方式？',
+        description:
+          '我们接受各种付款方式，包括主要信用卡、借记卡和在线支付平台。您可以在结账过程中选择最方便的选项。',
+      },
+      {
+        title: '是否有隐藏费用？',
+        description:
+          '不，我们的定价透明，没有隐藏费用。您在定价页面上看到的价格就是您将支付的价格。',
+      },
+      {
+        title: '我可以随时升级或降级我的计划吗？',
+        description:
+          '是的，您可以随时升级或降级您的计划以更好地满足您的需求。计划的更改将在下一个计费周期生效。',
+      },
+      {
+        title: '是否有免费试用期？',
+        description:
+          '我们为新用户提供限时免费试用期。在试用期间，您可以探索我们平台的功能和服务。',
+      },
+      {
+        title: '如何取消我的订阅？',
+        description:
+          '您可以随时通过您的账户设置取消订阅。取消将在当前计费周期结束时生效。',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="准备开始了吗？"
+    subtitle="不要让定价成为您成功的障碍。选择适合您需求的计划，开始您的旅程。"
+    actions={[
+      {
+        variant: 'primary',
+        text: '开始使用',
+        href: '/',
+      },
+    ]}
+  />
+</Layout> 
