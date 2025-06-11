@@ -1,11 +1,5 @@
 ---
 import { getLangFromUrl, getLocalizedUrl, type SupportedLanguage } from '~/utils/i18n';
-
-export interface Props {
-  iconClass?: string;
-}
-
-const { iconClass = 'w-5 h-5' } = Astro.props;
 const currentLang = getLangFromUrl(Astro.url);
 const currentPath = Astro.url.pathname;
 

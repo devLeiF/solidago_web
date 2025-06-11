@@ -1,7 +1,8 @@
 import { SITE } from 'astrowind:config';
 import { getPermalink } from './utils/permalinks';
 import { useTranslations, type SupportedLanguage, getLocalizedUrl } from './utils/i18n';
-import type { Props } from './components/widgets/Header.astro';
+import type { Props as HeaderProps } from './components/widgets/Header.astro';
+import type { Props as FooterProps } from './components/widgets/Footer.astro';
 
 export function getHeaderData(lang: SupportedLanguage = 'en') {
   const t = useTranslations(lang);
@@ -40,7 +41,7 @@ export function getHeaderData(lang: SupportedLanguage = 'en') {
       },
     ],
     actions: [{ variant: 'secondary', text: t('nav.contactUs'), href: localizeUrl('/contact') }],
-  } as Props;
+  } as HeaderProps;
 }
 
 export const headerData = getHeaderData();
@@ -70,7 +71,7 @@ export function getFooterData(lang: SupportedLanguage = 'en') {
       },
     ],
     footNote: `${SITE?.legalName} ${t('footer.copyright')}`,
-  } as Props;
+  } as FooterProps;
 }
 
 export const footerData = getFooterData();
