@@ -1,14 +1,29 @@
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
+import Certificates from '~/components/widgets/Certificates.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { useTranslations } from '~/utils/i18n';
+
+import acraLogo from '~/assets/images/cert/acra.png';
+import iscaLogo from '~/assets/images/cert/ISCA.webp';
+import cawnmLogo from '~/assets/images/cert/CAWNM.png';
+import sctpLogo from '~/assets/images/cert/SCTP.png';
+import accaLogo from '~/assets/images/cert/ACCA_logo.png';
 
 const t = useTranslations('zh');
 
 const metadata = {
   title: t('nav.aboutUs'),
 };
+
+const certificates = [
+  { src: acraLogo, alt: 'ACRA - 会计与企业监管局' },
+  { src: iscaLogo, alt: 'ISCA - 新加坡特许会计师协会' },
+  { src: cawnmLogo, alt: 'CAWNM - 特许会计师全球网络' },
+  { src: sctpLogo, alt: 'SCTP - 新加坡特许税务专业人士' },
+  { src: accaLogo, alt: 'ACCA - 特许公认会计师公会' },
+];
 ---
 
 <Layout metadata={metadata}>
@@ -39,4 +54,7 @@ const metadata = {
       我们的团队由<span class="underline underline-offset-1">在会计、税务和公司秘书方面拥有丰富经验的高素质人才</span>组成。我们的高级成员是<span class="font-bold">来自新加坡的特许会计师</span>，其余成员持有相关学位和专业证书，并在各自专业领域拥有所需的工作经验。
     </Fragment>
   </Hero>
+
+  <!-- Certificates Widget ******************* -->
+  <Certificates certificates={certificates} />
 </Layout> 

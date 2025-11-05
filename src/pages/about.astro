@@ -1,11 +1,26 @@
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
+import Certificates from '~/components/widgets/Certificates.astro';
 import Layout from '~/layouts/PageLayout.astro';
+
+import acraLogo from '~/assets/images/cert/acra.png';
+import iscaLogo from '~/assets/images/cert/ISCA.webp';
+import cawnmLogo from '~/assets/images/cert/CAWNM.png';
+import sctpLogo from '~/assets/images/cert/SCTP.png';
+import accaLogo from '~/assets/images/cert/ACCA_logo.png';
 
 const metadata = {
   title: 'About us',
 };
+
+const certificates = [
+  { src: acraLogo, alt: 'ACRA - Accounting and Corporate Regulatory Authority' },
+  { src: iscaLogo, alt: 'ISCA - Institute of Singapore Chartered Accountants' },
+  { src: cawnmLogo, alt: 'CAWNM - Chartered Accountants Worldwide Network Members' },
+  { src: sctpLogo, alt: 'SCTP - Singapore Chartered Tax Professionals' },
+  { src: accaLogo, alt: 'ACCA - Association of Chartered Certified Accountants' },
+];
 ---
 
 <Layout metadata={metadata}>
@@ -40,4 +55,7 @@ const metadata = {
       relevant degrees and professional certificates with the required working experience in their specialized fields.
     </Fragment>
   </Hero>
+
+  <!-- Certificates Widget ******************* -->
+  <Certificates certificates={certificates} />
 </Layout>
