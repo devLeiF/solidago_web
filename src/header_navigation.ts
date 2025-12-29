@@ -6,13 +6,13 @@ import type { Props as FooterProps } from './components/widgets/Footer.astro';
 
 export function getHeaderData(lang: SupportedLanguage = 'en') {
   const t = useTranslations(lang);
-  
+
   // Create localized URLs based on the current language
   const localizeUrl = (path: string) => {
     const baseUrl = getPermalink(path);
     return getLocalizedUrl(baseUrl, lang);
   };
-  
+
   return {
     links: [
       {
@@ -48,13 +48,13 @@ export const headerData = getHeaderData();
 
 export function getFooterData(lang: SupportedLanguage = 'en') {
   const t = useTranslations(lang);
-  
+
   // Create localized URLs based on the current language
   const localizeUrl = (path: string) => {
     const baseUrl = getPermalink(path);
     return getLocalizedUrl(baseUrl, lang);
   };
-  
+
   return {
     links: [],
     actions: [{ variant: 'primary', text: t('nav.contactUs'), href: localizeUrl('/contact') }],

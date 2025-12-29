@@ -6,14 +6,14 @@ import zh from '../i18n/zh.json';
 
 export const languages = {
   en: 'English',
-  zh: '中文'
+  zh: '中文',
 };
 
 export const defaultLang = 'en';
 
 export const translations = {
   en,
-  zh
+  zh,
 } as const;
 
 export type SupportedLanguage = keyof typeof translations;
@@ -51,4 +51,4 @@ export function getLocalizedUrl(url: string, targetLang: SupportedLanguage): str
     const cleanUrl = url.replace(/^\/zh/, '') || '/';
     return `/${targetLang}${cleanUrl === '/' ? '' : cleanUrl}`;
   }
-} 
+}

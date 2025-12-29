@@ -31,7 +31,9 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.jpg', alt: 'Solidago Hero Image' }}
   >
     <Fragment slot="title">
-      {t('hero.title').split('expert')[0]}<span class="text-accent dark:text-white highlight">expert</span>{t('hero.title').split('expert')[1] || ' support'}
+      {t('hero.title').split('expert')[0]}<span class="text-accent dark:text-white highlight">expert</span>{
+        t('hero.title').split('expert')[1] || ' support'
+      }
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -68,7 +70,12 @@ const metadata = {
       },
       {
         title: t('features.companySecretary.title'),
-        description: [t('features.companySecretary.registeredAddress'), t('features.companySecretary.companySecretary'), t('features.companySecretary.annualReturn'), t('features.companySecretary.xbrlCompilation')],
+        description: [
+          t('features.companySecretary.registeredAddress'),
+          t('features.companySecretary.companySecretary'),
+          t('features.companySecretary.annualReturn'),
+          t('features.companySecretary.xbrlCompilation'),
+        ],
         icon: 'flat-color-icons:document',
       },
       {

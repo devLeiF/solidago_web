@@ -1,7 +1,7 @@
 {
   "nav": {
     "incorporation": "公司注册",
-    "accounting": "会计服务", 
+    "accounting": "会计服务",
     "taxAdvisory": "税务咨询",
     "payroll": "薪酬管理",
     "companySecretary": "公司秘书",
@@ -26,7 +26,7 @@
     "accountingTaxation": {
       "title": "会计和税务",
       "bookkeeping": "记账服务",
-      "financialReporting": "财务报告", 
+      "financialReporting": "财务报告",
       "gstCompliance": "消费税申报",
       "corporateTax": "企业所得税申报",
       "personalTax": "个人所得税申报"
@@ -55,7 +55,7 @@
     "whyChoose": "为什么选择我们",
     "fastProcessing": "快速处理",
     "fastDescription": "1-2个工作日内完成注册流程",
-    "compliance": "完全合规", 
+    "compliance": "完全合规",
     "complianceDescription": "全程符合监管要求",
     "support": "持续支持",
     "supportDescription": "为您的所有业务提供全方位持续性支持"
@@ -71,7 +71,7 @@
     "description": "提供战略建议，确保税务合法合规"
   },
   "payroll": {
-    "title": "薪资管理", 
+    "title": "薪资管理",
     "subtitle": "专业的薪酬管理，公积金申报及其他人力资源管理业务",
     "description": "让我们在人力资源方面助您一臂之力，让您在雇佣员工方面做到合法合规"
   },
@@ -137,4 +137,4 @@
     "staffTitle": "我们的员工",
     "staffSubtitle": "我们的团队由在会计、税务和公司秘书方面拥有丰富经验的高素质人才组成。我们的高级成员是来自新加坡的特许会计师，其余成员持有相关学位和专业证书，并在各自专业领域拥有所需的工作经验。"
   }
-} 
+}

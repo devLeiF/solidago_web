@@ -7,30 +7,26 @@ interface Certificate {
   alt: string;
 }
 
-const {
-  certificates = [],
-  id,
-  isDark = false,
-  classes = {},
-  bg = await Astro.slots.render('bg'),
-} = Astro.props;
+const { certificates = [], id, isDark = false, classes = {}, bg = await Astro.slots.render('bg') } = Astro.props;
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
-    {certificates &&
-      certificates.map((cert: Certificate) => (
-        cert.src && (
-          <div class="flex justify-center items-center py-2 h-24">
-            <Image
-              src={cert.src}
-              alt={cert.alt || ''}
-              class="h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-            />
-          </div>
+    {
+      certificates &&
+        certificates.map(
+          (cert: Certificate) =>
+            cert.src && (
+              <div class="flex justify-center items-center py-2 h-24">
+                <Image
+                  src={cert.src}
+                  alt={cert.alt || ''}
+                  class="h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                  loading="lazy"
+                />
+              </div>
+            )
         )
-      ))}
+    }
   </div>
 </WidgetWrapper>
-

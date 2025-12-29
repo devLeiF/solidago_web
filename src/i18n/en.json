@@ -1,7 +1,7 @@
 {
   "nav": {
     "incorporation": "Incorporation",
-    "accounting": "Accounting", 
+    "accounting": "Accounting",
     "taxAdvisory": "Tax Advisory",
     "payroll": "Payroll",
     "companySecretary": "Company secretary",
@@ -26,7 +26,7 @@
     "accountingTaxation": {
       "title": "Accounting and taxation",
       "bookkeeping": "Bookkeeping",
-      "financialReporting": "Financial reporting", 
+      "financialReporting": "Financial reporting",
       "gstCompliance": "GST compliance",
       "corporateTax": "Corporate tax compliance",
       "personalTax": "Personal tax compliance"
@@ -55,7 +55,7 @@
     "whyChoose": "Why Choose Our Incorporation Service?",
     "fastProcessing": "Fast Processing",
     "fastDescription": "Complete incorporation process within 1-2 business days",
-    "compliance": "Full Compliance", 
+    "compliance": "Full Compliance",
     "complianceDescription": "Ensure all regulatory requirements are met from day one",
     "support": "Ongoing Support",
     "supportDescription": "Post-incorporation support for all your business needs"
@@ -71,7 +71,7 @@
     "description": "Navigate Singapore's tax landscape with confidence. Our tax specialists provide strategic advice and ensure timely compliance with all tax obligations."
   },
   "payroll": {
-    "title": "Payroll Management Services", 
+    "title": "Payroll Management Services",
     "subtitle": "Efficient payroll processing and CPF compliance for your business.",
     "description": "Let us handle your payroll complexities while you focus on growing your business. We ensure accurate processing and compliance with Singapore's employment regulations."
   },
@@ -112,7 +112,7 @@
     "featuresTitle": "Get tax right & Tax compliance made easy"
   },
   "accountingPage": {
-    "tagline": "Singapore Accounting Services", 
+    "tagline": "Singapore Accounting Services",
     "title": "Worry-Free Accounting With Us",
     "subtitle": "Focus on growing your business while we take care of the complexities of accounting. Our reliable accounting services provide you with peace of mind, knowing your books and records are accurately maintained and up-to-date."
   },
@@ -131,4 +131,4 @@
     "title": "Professional Company Secretarial Support",
     "subtitle": "Stay compliant with Singapore's corporate governance requirements. Our experienced company secretaries handle all statutory obligations and filings, ensuring your business remains in good standing."
   }
-} 
+}
