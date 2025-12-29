@@ -19,8 +19,14 @@ export const translations = {
 export type SupportedLanguage = keyof typeof translations;
 
 // Helper function to get nested translation keys
-function getNestedTranslation(obj: any, path: string): string {
-  return path.split('.').reduce((current, key) => current?.[key], obj) || path;
+function getNestedTranslation(obj: Record<string, unknown>, path: string): string {
+  const result = path.split('.').reduce<Record<string, unknown> | string | undefined>((current, key) => {
+    if (current && typeof current === 'object' && key in current) {
+      return current[key] as Record<string, unknown> | string;
+    }
+    return undefined;
+  }, obj);
+  return (typeof result === 'string' ? result : undefined) || path;
 }
 
 export function useTranslations(lang: SupportedLanguage = defaultLang) {
