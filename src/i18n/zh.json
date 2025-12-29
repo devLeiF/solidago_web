@@ -3,7 +3,7 @@
     "incorporation": "公司注册",
     "accounting": "会计服务", 
     "taxAdvisory": "税务咨询",
-    "payroll": "薪资管理",
+    "payroll": "薪酬管理",
     "companySecretary": "公司秘书",
     "aboutUs": "关于我们",
     "contactUs": "联系我们",
@@ -11,13 +11,13 @@
   },
   "hero": {
     "title": "通过我们的专业支持简化您的业务管理",
-    "subtitle": "享受无压力的会计、税务、薪资和公司秘书服务，与Solidago一起注册，安心无忧。",
+    "subtitle": "会计，税务，薪酬和秘书一站式服务，安心无忧",
     "contactUs": "联系我们",
     "learnMore": "了解更多"
   },
   "features": {
-    "title": "与我们合作，在新加坡取得商业成功。",
-    "subtitle": "满怀信心地在新加坡拓展您的业务。我们的专业人士通过专业地处理所有区域监管复杂性，确保无缝、合规的扩张。",
+    "title": "携手共进",
+    "subtitle": "让我们的专业为您在新加坡拓展业务保驾护航",
     "businessSetup": {
       "title": "企业设立",
       "businessConsulting": "商业咨询",
@@ -27,9 +27,9 @@
       "title": "会计和税务",
       "bookkeeping": "记账服务",
       "financialReporting": "财务报告", 
-      "gstCompliance": "消费税合规",
-      "corporateTax": "企业税务合规",
-      "personalTax": "个人税务合规"
+      "gstCompliance": "消费税申报",
+      "corporateTax": "企业所得税申报",
+      "personalTax": "个人所得税申报"
     },
     "companySecretary": {
       "title": "公司秘书",
@@ -40,7 +40,7 @@
     },
     "addOnServices": {
       "title": "附加服务",
-      "payrollOutsourcing": "薪资外包",
+      "payrollOutsourcing": "薪酬服务",
       "cpfRegistration": "公积金注册和提交",
       "ir8aFiling": "IR8A/AIS年度申报",
       "ir21TaxClearance": "IR21税务清关",
@@ -50,30 +50,30 @@
   },
   "incorporation": {
     "title": "新加坡公司注册",
-    "subtitle": "我们通过精简高效的服务简化新加坡公司注册流程。",
-    "description": "在新加坡创业从未如此简单。我们的专家团队处理公司注册的各个方面，确保符合当地法规，同时为您节省时间和精力。",
-    "whyChoose": "为什么选择我们的注册服务？",
+    "subtitle": "我们通过精简高效的服务简化注册流程。",
+    "description": "在新加坡创业从未如此简单！我们的专业队伍将全方位帮助贵公司合法合规，为您解决后顾之忧！",
+    "whyChoose": "为什么选择我们",
     "fastProcessing": "快速处理",
     "fastDescription": "1-2个工作日内完成注册流程",
     "compliance": "完全合规", 
-    "complianceDescription": "确保从第一天起满足所有监管要求",
+    "complianceDescription": "全程符合监管要求",
     "support": "持续支持",
-    "supportDescription": "注册后为您的所有业务需求提供支持"
+    "supportDescription": "为您的所有业务提供全方位持续性支持"
   },
   "accounting": {
-    "title": "专业会计服务",
-    "subtitle": "为您在新加坡的业务需求量身定制的全面会计解决方案。",
-    "description": "我们的合格会计师提供可靠的记账、财务报告和合规服务，让您的业务顺利运行。"
+    "title": "会计服务",
+    "subtitle": "为您在新加坡的业务量身定制的全面会计解决方案",
+    "description": "我们的专业会计师为您提供记账，准备报表等全面服务"
   },
   "taxAdvisory": {
-    "title": "税务咨询服务",
-    "subtitle": "专业的税务规划和合规服务，优化您的税务状况。",
-    "description": "满怀信心地应对新加坡的税务环境。我们的税务专家提供战略建议，确保及时履行所有税务义务。"
+    "title": "税务咨询",
+    "subtitle": "专业的税务支持",
+    "description": "提供战略建议，确保税务合法合规"
   },
   "payroll": {
-    "title": "薪资管理服务", 
-    "subtitle": "为您的业务提供高效的薪资处理和公积金合规服务。",
-    "description": "让我们处理您的薪资复杂性，而您专注于发展业务。我们确保准确处理并符合新加坡就业法规。"
+    "title": "薪资管理", 
+    "subtitle": "专业的薪酬管理，公积金申报及其他人力资源管理业务",
+    "description": "让我们在人力资源方面助您一臂之力，让您在雇佣员工方面做到合法合规"
   },
   "companySecretaryPage": {
     "title": "公司秘书服务",
@@ -84,12 +84,12 @@
     "title": "联系我们",
     "subtitle": "联系我们的团队获取专业商业服务。",
     "getInTouch": "联系我们",
-    "description": "准备简化您的业务运营？立即联系我们进行咨询。"
+    "description": "立即联系我们！"
   },
   "about": {
     "title": "关于Solidago Advisory",
-    "subtitle": "您在新加坡取得商业成功的可信伙伴。",
-    "description": "我们是一支经验丰富的专业团队，致力于帮助企业在新加坡充满活力的市场中蓬勃发展。"
+    "subtitle": "您在新加坡可信赖的合作伙伴",
+    "description": "让我们的专业队伍助您在新加坡市场迅速起飞！"
   },
   "footer": {
     "address": "101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533",
@@ -106,14 +106,14 @@
     "home": "首页"
   },
   "taxAdvisoryPage": {
-    "tagline": "新加坡税务服务",
-    "title": "通过我们的专业知识确保您的税务正确",
-    "subtitle": "我们经验丰富的团队提供全面的税务服务，帮助您履行税务义务，确保符合新加坡税务法规。无论您是寻求优化税务规划策略，还是需要税务申报方面的协助，我们都能提供您所需的专业知识和支持。",
-    "featuresTitle": "正确处理税务，轻松实现税务合规"
+    "tagline": "税务咨询",
+    "title": "专业的税务支持",
+    "subtitle": "我们经验丰富的团队提供全面的税务咨询服务，帮助您履行税务义务，确保符合新加坡税务法规。无论您是寻求优化税务规划策略，还是需要税务申报方面的协助，我们都能提供您所需的专业知识和支持。",
+    "featuresTitle": "提供战略建议，确保税务合法合规"
   },
   "accountingPage": {
-    "tagline": "新加坡会计服务",
-    "title": "与我们一起享受无忧会计服务",
+    "tagline": "会计服务",
+    "title": "为您在新加坡的业务量身定制的全面会计解决方案",
     "subtitle": "专注于发展您的业务，让我们来处理复杂的会计事务。我们可靠的会计服务为您提供安心保障，确保您的账簿和记录准确维护并及时更新。"
   },
   "incorporationPage": {
@@ -133,7 +133,7 @@
   },
   "aboutPage": {
     "welcomeTitle": "欢迎来到Solidago Advisory",
-    "welcomeSubtitle": "在Solidago Advisory，我们提供准确、及时和可靠的企业解决方案，专为您的业务需求量身定制。我们的服务包括公司设立、会计、税务、公司秘书、薪资和咨询。",
+    "welcomeSubtitle": "在Solidago Advisory，我们提供准确、及时和可靠的企业解决方案，专为您的业务需求量身定制。我们的服务包括公司设立、会计、税务、公司秘书、薪酬和咨询。",
     "staffTitle": "我们的员工",
     "staffSubtitle": "我们的团队由在会计、税务和公司秘书方面拥有丰富经验的高素质人才组成。我们的高级成员是来自新加坡的特许会计师，其余成员持有相关学位和专业证书，并在各自专业领域拥有所需的工作经验。"
   }
