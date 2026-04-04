@@ -5,7 +5,11 @@ import type { Props } from './components/widgets/Footer.astro';
 export const footerData = {
   links: [],
   actions: [{ variant: 'primary', text: 'Contact us', href: getPermalink('/contact') }],
-  descriptions: ['101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533', 'UEN: 202310293N'],
+  descriptions: [
+    '101 Cecil Street, #20-07, Tong Eng Building, Singapore 069533',
+    'UEN: 202310293N',
+    'WhatsApp: <a href="https://wa.me/6589869828" class="hover:underline">+65 8986 9828</a>',
+  ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
