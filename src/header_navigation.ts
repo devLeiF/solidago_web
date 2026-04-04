@@ -58,7 +58,11 @@ export function getFooterData(lang: SupportedLanguage = 'en') {
   return {
     links: [],
     actions: [{ variant: 'primary', text: t('nav.contactUs'), href: localizeUrl('/contact') }],
-    descriptions: [t('footer.address'), t('footer.uen')],
+    descriptions: [
+      t('footer.address'),
+      t('footer.uen'),
+      'WhatsApp: <a href="https://wa.me/6589869828" class="hover:underline">+65 8986 9828</a>',
+    ],
     secondaryLinks: [
       { text: t('footer.terms'), href: localizeUrl('/terms') },
       { text: t('footer.privacy'), href: localizeUrl('/privacy') },
